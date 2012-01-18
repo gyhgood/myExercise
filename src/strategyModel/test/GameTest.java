@@ -21,10 +21,15 @@ public class GameTest {
 		weaponList.add(new BowAndBehavior());
 		weaponList.add(new KnifeBehavior());
 		
+		//选择角色，利用多态将角色的引用指向具体角色的实现
 		Character user = new King();
-		//调用者选择用哪种武器攻击（这个选择就是给出具体的策略）
+		
+		//调用者给出具体的策略，要使用哪种武器的攻击方式
 		user.setWeapon(weaponList.get(1));
+		
+		//此时指向的是King的攻击动作
 		user.fight();
+		
 		//武器的攻击
 		user.runweapon();
 	}
