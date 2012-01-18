@@ -1,4 +1,4 @@
-package test;
+package strategyModel.test;
 import java.util.ArrayList;
 import java.util.List;
 
